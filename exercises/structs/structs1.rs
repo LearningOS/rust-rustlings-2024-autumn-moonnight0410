@@ -17,14 +17,6 @@ struct ColorTupleStruct(u8,u8,u8);
 
 #[derive(Debug)]
 struct UnitLikeStruct;
-impl fmt::Display for UnitLikeStruct {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result{
-        write!(
-            f,
-            "UnitLikeStructs"
-        )
-    }
-}
 
 #[cfg(test)]
 mod tests {
